@@ -1,0 +1,17 @@
+# Core libraries
+pandas>=1.3.5
+torch>=1.12.0
+transformers>=4.25.1
+jupyterlab>=3.4.0
+notebook>=6.4.12
+
+# Hugging Face libraries
+accelerate>=0.16.0
+sentencepiece>=0.1.97
+protobuf>=3.20.0
+datasets>=2.10.0
+
+# Installation utilities
+pip>=22.0.4
+setuptools>=65.5.1
+wheel>=0.38.0
