@@ -1,13 +1,21 @@
-
+import streamlit as st
+from src.initializeshared import initialize_shared
 
 def main():
-  print("Testing LLM Model")
+  st.title("Testing LLM Model App")
+  
   #load csv file
   election_df = load_election_data(CSVPATH)
+  
   # Note: Replace with a more capable model if needed
   tokenizer, model = setup_hugging_face_model("HuggingFaceH4/zephyr-7b-beta")
-  # 3. Ask the model about Precinct 99
+  
+  # Ask the model about Precinct 99
   query = "Which Presidential candidate received more votes in Precinct 208?"
-  print(f"\nQuery: {query}")
   answer = query_election_data(election_df, query, tokenizer, model)
-  print(f"\nModel's answer: {answer}")
+  st.write(f"Query: {query}")
+  st.write("")
+  st.write(f"Model's answer: {answer}")
+  
+if __name__ == "__main__":
+    main()
