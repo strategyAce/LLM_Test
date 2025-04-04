@@ -10,12 +10,12 @@ def load_election_data(file_path):
     df = pd.read_csv(file_path)
 
     # Display the first few rows to understand the data
-    st.print("Preview of election data:")
+    st.write("Preview of election data:")
     #display(df.head())
 
     # Display basic information about the dataset
-    st.print("\nDataset information:")
-    st.print(f"Number of rows: {len(df)}")
-    st.print(f"Columns: {', '.join(df.columns)}")
+    st.write("\nDataset information:")
+    st.write(f"Number of rows: {len(df)}")
+    st.write(f"Columns: {', '.join(df.columns)}")
 
     return df
