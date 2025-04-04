@@ -1,3 +1,4 @@
+import streamlit as st
 import pandas as pd
 
 def load_election_data(file_path):
@@ -9,12 +10,12 @@ def load_election_data(file_path):
     df = pd.read_csv(file_path)
 
     # Display the first few rows to understand the data
-    print("\nPreview of election data:")
-    display(df.head())
+    st.print("Preview of election data:")
+    #display(df.head())
 
     # Display basic information about the dataset
-    print("\nDataset information:")
-    print(f"Number of rows: {len(df)}")
-    print(f"Columns: {', '.join(df.columns)}")
+    st.print("\nDataset information:")
+    st.print(f"Number of rows: {len(df)}")
+    st.print(f"Columns: {', '.join(df.columns)}")
 
     return df
