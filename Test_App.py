@@ -22,9 +22,12 @@ def main():
   # Ask the model about Precinct 99
   query = "Which Presidential candidate received more votes in Precinct 208?"
   answer = query_election_data(election_df, query, tokenizer, model)
-  st.write(f"Query: {query}")
-  st.write("")
-  st.write(f"Model's answer: {answer}")
+  st.subtitle("")
+  st.container(border=True):
+    st.subtitle("Output")  
+    st.write(f"Query: {query}")
+    st.write("")
+    st.write(f"Model's answer: {answer}")
   
 if __name__ == "__main__":
     main()
