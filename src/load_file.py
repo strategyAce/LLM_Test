@@ -1,4 +1,4 @@
-import padas as pd
+import pandas as pd
 
 def load_election_data(file_path):
     """Load and display election results from a CSV file"""
