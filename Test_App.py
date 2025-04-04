@@ -1,7 +1,7 @@
 import streamlit as st
-from query import query_election_data
-from load_file import load_election_data
-from model_setup import setup_hugging_face_model
+from src.query import query_election_data
+from src.load_file import load_election_data
+from src.model_setup import setup_hugging_face_model
 
 def main():
   st.title("Testing LLM Model App")
