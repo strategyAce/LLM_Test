@@ -23,7 +23,7 @@ def main():
   query = "Which Presidential candidate received more votes in Precinct 208?"
   answer = query_election_data(election_df, query, tokenizer, model)
   st.subtitle("")
-  st.container(border=True):
+  with st.container(border=True):
     st.subtitle("Output")  
     st.write(f"Query: {query}")
     st.write("")
