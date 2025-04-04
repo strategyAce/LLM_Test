@@ -10,8 +10,7 @@ def main():
     # Data source selection
     uploaded_file = None
     drive_path = None
-    if data_source == "Local file upload":
-        uploaded_file = st.file_uploader("Upload a CSV file", type="csv")
+    uploaded_file = st.file_uploader("Upload a CSV file", type="csv")
       
   
   #load csv file
